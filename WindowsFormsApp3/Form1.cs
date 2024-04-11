@@ -29,9 +29,9 @@ namespace Assessment_1
         {
             // Extract information from text boxes
             string name = txtName.Text;
-            int age = int.Parse(txtAge.Text); // Add validation
+            int age = int.Parse(txtAge.Text); //validation
             string address = txtAddress.Text;
-            float amountOwed = float.Parse(txtAmountOwed.Text); // Add validation
+            float amountOwed = float.Parse(txtAmountOwed.Text); //validation
 
             Customer customer = new Customer(name, age, address, amountOwed);
             customerQueue.Enqueue(customer);

@@ -37,6 +37,12 @@ namespace Assessment_1
             tail = (tail + 1) % capacity;
             count++;
         }
+        
+        /// <summary>
+        /// Provides a public read-only property to access the head of the queue.
+        /// Time Complexity: O(1)
+        /// </summary>
+        public int Head => head;
 
         /// <summary>
         /// Removes and returns the customer at the beginning of the queue.
